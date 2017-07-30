@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
+Currently a student a Flatiron School learning how to be a programmer. Check in later to learn more!
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[kenny.lin@flatironschool.com](mailto:kenny.lin@flatironschool.com)
