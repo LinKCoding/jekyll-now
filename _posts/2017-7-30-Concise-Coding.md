@@ -3,7 +3,7 @@ layout: post
 title: Terseness
 ---
 
-<h1> Exploring the Rubyist Way <h1>
+# Exploring the Rubyist Way
 >"I want to solve problems I meet in the daily life by using computers, so I need to write programs. By using Ruby, I want to concentrate the things I do, not the magical rules of the language ... So I have tried to make Ruby code concise and succinct." - Yukihiro Matsumoto (Matz)
 
 Ruby is a coding language that allows the programmer to get the point without getting bogged down (too much) by the syntax of the language. There are so many methods built within it that when transitioning to another language, could make it seem like a chore.
