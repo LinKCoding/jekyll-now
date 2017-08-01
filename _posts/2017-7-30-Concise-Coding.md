@@ -44,7 +44,7 @@ end
 ~~~
 However, that's not to say that you can't use `return`, just that by convention Rubyists tend not to use it and Ruby doesn't need you to tell it do it.
 
-```
+```ruby
 def hello_word
 	return "hello world"
 end
@@ -57,7 +57,7 @@ Ternary operator isn't a concept unique to Ruby. In fact a quick search on [wiki
 
 Conditionals are usually written in the following format (again with Ruby)
 
-~~~Ruby
+~~~ruby
 string = "some other expression or variable to be evaluated"
 
 def if_else_comparison(condition)
@@ -74,7 +74,7 @@ if_else_comparison(string)
 
 Now, let's see the same method written using a ternary operator:
 
-~~~Ruby
+~~~ruby
 string = "some expression or variable to be evaluated"
 
 def ternary_operator_example(condition)
