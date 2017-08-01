@@ -27,7 +27,7 @@ Now, I admit, this is a very basic example and you might rarely need to reverse 
 
 ```ruby
 def palidrone_checker(word_in_question)
-	word_in_question == word_in_question.reverse
+ word_in_question == word_in_question.reverse
 end
 
 ```
@@ -38,7 +38,7 @@ When you write a method in Ruby, you don't have explicitly use a `return` keywor
 
 ~~~ruby
 def hello_world
-	"hello world"
+ "hello world"
 end
 # => "hello world"
 ~~~
@@ -46,7 +46,7 @@ However, that's not to say that you can't use `return`, just that by convention 
 
 ```ruby
 def hello_word
-	return "hello world"
+ return "hello world"
 end
 # => "hello world"
 ```
@@ -61,11 +61,11 @@ Conditionals are usually written in the following format (again with Ruby)
 string = "some other expression or variable to be evaluated"
 
 def if_else_comparison(condition)
-	if condition
-		true
-	else
-		false
-	end
+ if condition
+	true
+ else
+	false
+ end
 end
 
 if_else_comparison(string)
@@ -78,7 +78,7 @@ Now, let's see the same method written using a ternary operator:
 string = "some expression or variable to be evaluated"
 
 def ternary_operator_example(condition)
-	condition ? true : false
+ condition ? true : false
 end
 
 ternary_operator_example(string)
