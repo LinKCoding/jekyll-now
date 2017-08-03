@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Terseness
+title: Concise Coding
 ---
 
 ### Exploring the Rubyist Way
@@ -50,10 +50,12 @@ def hello_word
 end
 # => "hello world"
 ```
-Again, to reiterate, know the tools at your disposal and when to use them. If you were to explain Ruby to a beginner, you might want to include `return` in your code and eventual introduce them to the concept of implicit returns. On the other hand, if you know that your code is being read by a fellow Rubyist, they might give you an odd stare after seeing all the `return`s. `¯\_(ツ)_/¯`
+Note: if you do use the `return` keyword, it will return the value and "return early" meaning any line of code written after the return will not be evaluated.  
+
+Know the tools at your disposal and when to use them. If you were to explain Ruby to a beginner, you might want to include `return` in your code and eventual introduce them to the concept of implicit returns. On the other hand, if you know that your code is being read by a fellow Rubyist, they might give you an odd stare after seeing all the `return`s. `¯\_(ツ)_/¯`
 
 ### Ternary Operators
-Ternary operator isn't a concept unique to Ruby. In fact a quick search on [wikipedia](https://en.wikipedia.org/wiki/%3F:) will pull an enormous list of languages that this conditional operator. 
+Ternary operator isn't a concept unique to Ruby. In fact a quick search on [wikipedia](https://en.wikipedia.org/wiki/%3F:) will pull an enormous list of languages that this conditional operator.
 
 Conditionals are usually written in the following format (again with Ruby)
 
@@ -63,7 +65,7 @@ this_is_false = false
 
 def if_else_comparison(condition)
 	if condition
-		true 
+		true
 	else
 		false
 	end
@@ -82,8 +84,8 @@ this_is_true = true
 this_is_false = false
 
 def ternary_operator_example(condition)
-	condition ? true : false 
-end 
+	condition ? true : false
+end
 
 ternary_operator_example(this_is_true)
 # => true
@@ -91,22 +93,22 @@ ternary_operator_example(this_is_true)
 # => false
 ~~~
 
-Initially, it might not seem that intuitive, but it's actually not that hard to use. What's happening when you use a ternary operator is that the condition to the left of the `?` gets evaluated and if it's truthy, the value on the left of the `:` gets returned; if it's falsey, the value on the right gets returned. 
+Initially, it might not seem that intuitive, but it's actually not that hard to use. What's happening when you use a ternary operator is that the condition to the left of the `?` gets evaluated and if it's truthy, the value on the left of the `:` gets returned; if it's falsey, the value on the right gets returned.
 
 
 Take a look back up and notice the difference in lines and the amount of code written. If you're going to write an if-else statement and you're evaluating a condition and returning one of two values, consider a ternary operator. You'd still have to keep in mind if the condition you're checking is extremely long or wordy, you might just want to default to the traditional if else statements. In other words, be logical about it. ( ͡~ ͜ʖ ͡°)
 
-Last thing about ternary operators, you can nest them: 
+Last thing about ternary operators, you can nest them:
 
 ~~~ruby
 def fizz_buzz_checker(num)
-	num % 5 == 0 && num % 3 == 0 ? "FizzBuzz" : num % 3 == 0 ? "Fizz" : num % 5 == 0 ? "Buzz" : num 
+	num % 5 == 0 && num % 3 == 0 ? "FizzBuzz" : num % 3 == 0 ? "Fizz" : num % 5 == 0 ? "Buzz" : num
 end
 
 fizz_buzz_checker(3)
 # => "Fizz"
 fizz_buzz_checker(5)
-# => "Buzz" 
+# => "Buzz"
 fizz_buzz_checker(15)
 # => "FizzBuzz"
 fizz_buzz_checker(1337)
@@ -119,38 +121,38 @@ fizz_buzz_checker(1337)
 As mentioned before, Ruby is great for its functionality and readability. Sometimes, you can read the code as if it were written in English. Take a look at the following code and see how it'd work using the traditional `if-else` statements.
 
 ~~~ruby
-ruby = "easy to read" 
+ruby = "easy to read"
 
 def easy_to_read?(language)
-	if language == "easy to read" 
-		true 
+	if language == "easy to read"
+		true
 	end
 end
 
 easy_to_read?(ruby)
-# => true 
+# => true
 ~~~
 
-So, basically, we're checking to see if the language is "easy to read" and if it is then we'll return `true`. If it's `false` I'm not really concerned about it anyway. But, we can do that same thing, using a statement modifier: 
+So, basically, we're checking to see if the language is "easy to read" and if it is then we'll return `true`. If it's `false` I'm not really concerned about it anyway. But, we can do that same thing, using a statement modifier:
 
 ~~~ruby
-ruby = "easy to read" 
+ruby = "easy to read"
 
 def easy_to_read?(language)
-	true if language == "easy to read" 
+	true if language == "easy to read"
 end
 
 easy_to_read?(ruby)
-# => true 
+# => true
 ~~~
 
-It only took one line! `ᕙ( ͡° ͜ʖ ͡°)ᕗ` And the same type of logic can be applied using `unless` 
+It only took one line! `ᕙ( ͡° ͜ʖ ͡°)ᕗ` And the same type of logic can be applied using `unless`
 
 ~~~ruby
 ruby = "still easy to read"
 
 def still_easy_to_read?(language)
-	true unless language == "difficult to read" 
+	true unless language == "difficult to read"
 end
 
 still_easy_to_read?(ruby)
@@ -163,7 +165,7 @@ Just to practice using `unless` and not have it evaluate it to true.
 klingon = "difficult to read"
 
 def still_easy_to_read?(language)
-	true unless language == "difficult to read" 
+	true unless language == "difficult to read"
 end
 
 still_easy_to_read?(klignon)
@@ -177,8 +179,8 @@ In conclusion, Ruby has so many methods to help you find a solution to your prob
 
 ---
 
-#### Resources: 
-	
+#### Resources:
+
 [Ternary Operators](http://www.dnawebagency.com/ternary-operator/)  
 [Interview with Matz](http://www.artima.com/intv/rubyP.html)  
 [Statement Modifiers](http://rubylearning.com/satishtalim/simple_constructs.html)  
